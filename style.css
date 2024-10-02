@@ -1,0 +1,193 @@
+/* Paleta de cores */
+:root {
+    --primary-color: #28a745;
+    --secondary-color: #5298F2;
+    --light-color: #F2D06B;
+    --text-color: #212529;
+  }
+  
+  /* Reset básico */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--light-color);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  header {
+    background-color: var(--secondary-color);
+    color: #fff;
+    text-align: center;
+    padding: 5rem 1rem;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+  }
+  
+  header .btn {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  header .btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+  }
+
+  #imagem {
+    width: 40%;
+    height: 40%;
+  }
+  
+  /* Ebook Section */
+  #ebook {
+    padding: 5rem 1rem;
+  }
+  
+  #ebook h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Benefícios Section */
+  #beneficios {
+    padding: 5rem 1rem;
+    background-color: var(--light-color);
+  }
+  
+  #beneficios .text-center {
+    margin-bottom: 2rem;
+  }
+  
+  #beneficios i {
+    transition: transform 0.3s ease;
+  }
+  
+  #beneficios i:hover {
+    transform: scale(1.2);
+  }
+  
+  #beneficios .col-md-4 {
+    margin-bottom: 2rem;
+  }
+  
+  /* Depoimentos Section */
+  #depoimentos {
+    padding: 5rem 1rem;
+  }
+  
+  #depoimentos h2 {
+    margin-bottom: 2rem;
+  }
+  
+  .testimonial {
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .testimonial:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .testimonial p {
+    font-size: 1.1rem;
+  }
+  
+  /* Call to Action Section */
+  #comprar {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 5rem 1rem;
+  }
+  
+  #comprar .btn {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.3rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  #comprar .btn:hover {
+    background-color: #218838;
+    transform: scale(1.1);
+  }
+  
+  /* Footer */
+  footer {
+    padding: 2rem 1rem;
+    background-color: var(--light-color);
+    color: var(--text-color);
+    text-align: center;
+  }
+  
+  /* Hover efeitos de links sociais */
+  ul.social-links li a {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  ul.social-links li a:hover {
+    color: #218838;
+    transform: scale(1.1);
+  }
+  
+  /* Links com efeitos de suavidade */
+  a {
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: var(--primary-color);
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    header p {
+      font-size: 1rem;
+    }
+  
+    #ebook h2 {
+      font-size: 2rem;
+    }
+  
+    .card {
+      margin-bottom: 1rem;
+    }
+  
+    #comprar h2 {
+      font-size: 1.8rem;
+    }
+  }
+  
